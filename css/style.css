@@ -16,7 +16,7 @@ img {
   max-width: 100%;
 }
 
-li {
+ul {
   list-style: none;
 }
 
@@ -38,7 +38,7 @@ body {
   background: #fb5;
 }
 
-.menu-item {
+.menu ul {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
