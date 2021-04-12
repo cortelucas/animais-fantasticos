@@ -5,18 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Animais Fantásticos</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="grid-container">
   <nav class="menu">
-    <li><a href="#animais">Animais</a></li>
-    <li><a href="#faq">Faq</a></li>
-    <li><a href="#contato">Contato</a></li>
-    <li><a href="#">Dev →</a></li>
+    <li class="menu-item"><a class="menu-link" href="#animais">Animais</a></li>
+    <li class="menu-item"><a class="menu-link" href="#faq">Faq</a></li>
+    <li class="menu-item"><a class="menu-link" href="#contato">Contato</a></li>
+    <li class="menu-item"><a class="menu-link" href="#">Dev →</a></li>
   </nav>
   <section class="grid-section animais" id="animais">
     <h1 class="titulo">Animais Fantásticos</h1>
-    <ul>
+    <ul class="animais-lista">
       <li><img src="./img/img-fox.jpg" alt=""></li>
       <li><img src="./img/img-squirrel.jpg" alt=""></li>
       <li><img src="./img/img-bear.jpg" alt=""></li>
@@ -26,7 +28,7 @@
     </ul>
     <div class="animais-descricao">
       <section>
-        <h2>Raposa</h2>
+        <h2 class="animais-titulo">Raposa</h2>
         <p>Raposas são pequenos a médios mamíferos onívoros pertencentes a vários gêneros da família Canidae. As raposas têm o
            crânio achatado, orelhas triangulares verticais, focinho pontiagudo e ligeiramente arrebitado e uma cauda longa e 
            espessa.</p>
@@ -41,7 +43,7 @@
           <p><a href="https://pt.wikipedia.org/wiki/Raposa">Veja mais +</a></p>
       </section>
       <section>
-        <h2>Esquilo</h2>
+        <h2 class="animais-titulo">Esquilo</h2>
         <p>Os esquilos pertencem a uma grande família de mamíferos roedores, de pequeno e médio porte, conhecida como Sciuridae. 
           No Brasil, são também conhecidos como serelepe, caxinguelê, caxinxe, quatimirim, quatipuru, agutipuru ou acutipuru.</p>
         <p>Na Galiza e em algumas zonas de Portugal, também é conhecido por esquilo. Os esquilos estão espalhados por quase 
@@ -50,7 +52,7 @@
           <p><a href="https://pt.wikipedia.org/wiki/Esquilo">Veja mais +</a></p>  
       </section>
       <section>
-        <h2>Urso</h2>
+        <h2 class="animais-titulo">Urso</h2>
         <p>Os Ursos (latim científico: Ursidae) constituem uma família de mamíferos plantígrados, da ordem Carnivora, 
           geralmente de grande porte, contendo os ursos e os pandas. Embora classificado como urso, e logo após, como 
           procionídeo, junto com o panda-vermelho, o panda-gigante foi recolocado dentro da família dos ursídeos devido às 
@@ -65,7 +67,7 @@
           <p><a href="https://pt.wikipedia.org/wiki/Ursidae">Veja mais +</a></p>
       </section>
       <section>
-        <h2>Lobo</h2>
+        <h2 class="animais-titulo">Lobo</h2>
         <p>O lobo (também chamado de lobo-cinzento; nome científico: Canis lupus) é uma espécie de mamífero canídeo do gênero 
           Canis. É um sobrevivente da Era do Gelo, originário do Pleistoceno Superior, cerca de 300 mil anos atrás. É o maior 
           membro remanescente selvagem da família canidae.</p>
@@ -82,7 +84,7 @@
         <p><a href="https://pt.wikipedia.org/wiki/Lobo">Veja mais +</a></p>
       </section>
       <section>
-        <h2>Macaco</h2>
+        <h2 class="animais-titulo">Macaco</h2>
         <p>Macaco é um termo de origem africana (provavelmente do banto makako) utilizado como designação comum a todas as 
           espécies de símios ou primatas antropoides. É aplicada restritivamente no Brasil aos cebídeos (ou macacos do Novo 
           Mundo) em geral. No sentido estrito, "macaco" refere-se às espécies de primatas pertencentes ao género Macaca.</p>
@@ -95,7 +97,7 @@
         <p><a href="https://pt.wikipedia.org/wiki/Macaco">Veja mais +</a></p>
       </section>
       <section>
-        <h2>Leão</h2>
+        <h2 class="animais-titulo">Leão</h2>
         <p>O leão [feminino: leoa] (nome científico: Panthera leo) é uma espécie de mamífero carnívoro do gênero Panthera e 
           da família Felidae. A espécie é atualmente encontrada na África subsaariana e na Ásia, com uma única população 
           remanescente em perigo, no Parque Nacional da Floresta de Gir, Gujarat, Índia.</p>
@@ -109,8 +111,8 @@
     </div>
   </section>
   <section class="grid-section faq" id="faq">
-    <h1>FAQ</h1>
-    <dl>
+    <h1 class="titulo">FAQ</h1>
+    <dl class="faq-lista">
       <dt>Qual a idade dos animais?</dt>
       <dd>São animais de diferentes idades, desde filhotes a muito idosos.</dd>
       <dt>Eles são fantásticos?</dt>
@@ -124,18 +126,18 @@
     </dl>
   </section>
   <section class="grid-section contato" id="contato">
-    <h1>Contato</h1>
+    <h1 class="titulo">Contato</h1>
     <div class="mapa"><img src="./img/img-map.jpg" alt=""></div>
     <ul class="dados">
-      <li>contato@animaisfantasticos.com.br</li>
-      <li>+55 (99) 99999-9999</li>
-      <li>Bosque dos Ipês, Rural</li>
-      <li>São Paulo</li>
+      <li class="dados-item">contato@animaisfantasticos.com.br</li>
+      <li class="dados-item">+55 (99) 99999-9999</li>
+      <li class="dados-item">Bosque dos Ipês, Rural</li>
+      <li class="dados-item">São Paulo</li>
     </ul>
   </section>
 
   <footer class="copy">
-    <p>Todos os direitos reservados.</p>
+    <p class="copy-text">Todos os direitos reservados.</p>
   </footer>
 </body>
 <script src="./js/script.js"></script>
