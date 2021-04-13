@@ -7,6 +7,7 @@
   <title>Animais Fantásticos</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+  <script>document.documentElement.className += ' js';</script>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="grid-container">
@@ -20,7 +21,7 @@
   </nav>
   <section class="grid-section animais" id="animais">
     <h1 class="titulo">Animais Fantásticos</h1>
-    <ul class="animais-lista">
+    <ul class="animais-lista" id="tab-menu">
       <li><img src="./img/img-fox.jpg" alt="Imagem raposa"></li>
       <li><img src="./img/img-squirrel.jpg" alt="Imagem esquilo"></li>
       <li><img src="./img/img-bear.jpg" alt="Imagem Urso"></li>
@@ -28,7 +29,7 @@
       <li><img src="./img/img-monkey.jpg" alt="imagem macaco"></li>
       <li><img src="./img/img-lion.jpg" alt="imagem leão"></li>
     </ul>
-    <div class="animais-descricao">
+    <div class="animais-descricao" id="tab-content">
       <section>
         <h2 class="animais-titulo">Raposa</h2>
         <p>Raposas são pequenos a médios mamíferos onívoros pertencentes a vários gêneros da família Canidae. As raposas têm o
@@ -141,6 +142,6 @@
   <footer class="copy">
     <p class="copy-text">Todos os direitos reservados.</p>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
-<script src="./js/script.js"></script>
 </html>
