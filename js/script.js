@@ -1,42 +1,9 @@
-function initTabNav() {
-  const tabMenu = document.querySelectorAll('.js-tabmenu li');
-  const tabContent = document.querySelectorAll('.js-tabcontent section');
+import initScrollSuave from './modules/scroll-suave.js';
+import initAnimacaoScroll from './modules/scroll-animacao.js';
+import initAccordion from './modules/accordion.js';
+import initTabNav from './modules/tabnav.js';
 
-  if (tabMenu.length && tabContent.length) {
-    tabContent[0].classList.add('ativo');
-
-    function activeTab(i) {
-      tabContent.forEach((section) => {
-        section.classList.remove('ativo');
-      })
-      tabContent[i].classList.toggle('ativo');
-    }
-
-    tabMenu.forEach((itemMenu, i) => {
-      itemMenu.addEventListener('click', () => {
-        activeTab(i);
-      });
-    });
-  }
-}
-initTabNav();
-
-function initAccordion() {
-  const accordionList = document.querySelectorAll('.js-accordion dt');
-  const ativoClass = 'ativo';
-
-  if (accordionList.length) {
-    accordionList[0].classList.add(ativoClass);
-    accordionList[0].nextElementSibling.classList.toggle(ativoClass);
-
-    function activeAccordion() {
-      this.classList.toggle(ativoClass);
-      this.nextElementSibling.classList.toggle(ativoClass);
-    }
-
-    accordionList.forEach((item) => {
-      item.addEventListener('click', activeAccordion);
-    });
-  }
-}
+initScrollSuave();
+initAnimacaoScroll();
 initAccordion();
+initTabNav();
